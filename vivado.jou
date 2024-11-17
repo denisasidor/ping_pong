@@ -1,0 +1,50 @@
+#-----------------------------------------------------------
+# Vivado v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Thu May 19 14:13:16 2022
+# Process ID: 15116
+# Current directory: D:/_University_/__AN-2__/Semestrul_2/SCID/Proiect/Proiect_PingPong
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent8684 D:\_University_\__AN-2__\Semestrul_2\SCID\Proiect\Proiect_PingPong\Proiect_PingPong.xpr
+# Log file: D:/_University_/__AN-2__/Semestrul_2/SCID/Proiect/Proiect_PingPong/vivado.log
+# Journal file: D:/_University_/__AN-2__/Semestrul_2/SCID/Proiect/Proiect_PingPong\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project D:/_University_/__AN-2__/Semestrul_2/SCID/Proiect/Proiect_PingPong/Proiect_PingPong.xpr
+uupdate_compile_order -fileset sources_1
+add_files -fileset constrs_1 -norecurse {{D:/_University_/__AN-2__/Semestrul_2/SCID/Project2 - WhackaMole/basys3.xdc}}
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 6
+wait_on_run impl_1
+export_ip_user_files -of_objects  [get_files {{D:/_University_/__AN-2__/Semestrul_2/SCID/Project2 - WhackaMole/basys3.xdc}}] -no_script -reset -force -quiet
+remove_files  -fileset constrs_1 {{D:/_University_/__AN-2__/Semestrul_2/SCID/Project2 - WhackaMole/basys3.xdc}}
+file mkdir D:/_University_/__AN-2__/Semestrul_2/SCID/Proiect/Proiect_PingPong/Proiect_PingPong.srcs/constrs_1
+file mkdir D:/_University_/__AN-2__/Semestrul_2/SCID/Proiect/Proiect_PingPong/Proiect_PingPong.srcs/constrs_1/new
+close [ open D:/_University_/__AN-2__/Semestrul_2/SCID/Proiect/Proiect_PingPong/Proiect_PingPong.srcs/constrs_1/new/basys3.xdc w ]
+add_files -fileset constrs_1 D:/_University_/__AN-2__/Semestrul_2/SCID/Proiect/Proiect_PingPong/Proiect_PingPong.srcs/constrs_1/new/basys3.xdc
+reset_run synth_1
+launch_runs synth_1 -jobs 6
+wait_on_run synth_1
+close_project
+create_project Cartita D:/_University_/__AN-2__/Semestrul_2/SCID/Proiect/Cartita -part xa7a35tcpg236-1I
+set_property target_language VHDL [current_project]
+add_files -norecurse {{C:/Users/Larisa/Downloads/OneDrive_2022-05-19/Project2 - WhackaMole/driver7seg.vhd} {C:/Users/Larisa/Downloads/OneDrive_2022-05-19/Project2 - WhackaMole/fsm.vhd}}
+update_compile_order -fileset sources_1
+add_files -fileset constrs_1 -norecurse {{C:/Users/Larisa/Downloads/OneDrive_2022-05-19/Project2 - WhackaMole/basys3.xdc}}
+launch_runs synth_1 -jobs 6
+wait_on_run synth_1
+launch_runs impl_1 -jobs 6
+wait_on_run impl_1
+launch_runs impl_1 -to_step write_bitstream -jobs 6
+wait_on_run impl_1
+open_hw_manager
+connect_hw_server -allow_non_jtag
+open_hw_target
+current_hw_device [get_hw_devices xc7a35t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a35t_0] 0]
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {D:/_University_/__AN-2__/Semestrul_2/SCID/Proiect/Cartita/Cartita.runs/impl_1/fsm.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+close_hw_manager

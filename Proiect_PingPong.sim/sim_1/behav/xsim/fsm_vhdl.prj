@@ -1,0 +1,7 @@
+# compile vhdl design source files
+vhdl xil_defaultlib  \
+"../../../../../../Project2 - WhackaMole/driver7seg.vhd" \
+"../../../../../../Project2 - WhackaMole/fsm.vhd" \
+
+# Do not sort compile order
+nosort

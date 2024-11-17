@@ -1,0 +1,349 @@
+#-----------------------------------------------------------
+# Vivado v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Thu May 19 14:33:00 2022
+# Process ID: 11148
+# Current directory: D:/_University_/__AN-2__/Semestrul_2/SCID/Proiect/Proiect_PingPong/Proiect_PingPong.runs/synth_1
+# Command line: vivado.exe -log PingPong.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source PingPong.tcl
+# Log file: D:/_University_/__AN-2__/Semestrul_2/SCID/Proiect/Proiect_PingPong/Proiect_PingPong.runs/synth_1/PingPong.vds
+# Journal file: D:/_University_/__AN-2__/Semestrul_2/SCID/Proiect/Proiect_PingPong/Proiect_PingPong.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source PingPong.tcl -notrace
+Command: synth_design -top PingPong -part xa7a35tcpg236-1I
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xa7a35t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xa7a35t'
+INFO: [Device 21-403] Loading part xa7a35tcpg236-1I
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 13484
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 1015.926 ; gain = 0.000
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'PingPong' [D:/_University_/__AN-2__/Semestrul_2/SCID/Project2 - WhackaMole/fsm.vhd:16]
+WARNING: [Synth 8-614] signal 'SW' is read in the process but is not in the sensitivity list [D:/_University_/__AN-2__/Semestrul_2/SCID/Project2 - WhackaMole/fsm.vhd:46]
+WARNING: [Synth 8-614] signal 'KEY' is read in the process but is not in the sensitivity list [D:/_University_/__AN-2__/Semestrul_2/SCID/Project2 - WhackaMole/fsm.vhd:58]
+WARNING: [Synth 8-614] signal 'scoreR' is read in the process but is not in the sensitivity list [D:/_University_/__AN-2__/Semestrul_2/SCID/Project2 - WhackaMole/fsm.vhd:58]
+WARNING: [Synth 8-614] signal 'outvector' is read in the process but is not in the sensitivity list [D:/_University_/__AN-2__/Semestrul_2/SCID/Project2 - WhackaMole/fsm.vhd:141]
+INFO: [Synth 8-256] done synthesizing module 'PingPong' (1#1) [D:/_University_/__AN-2__/Semestrul_2/SCID/Project2 - WhackaMole/fsm.vhd:16]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:09 ; elapsed = 00:00:09 . Memory (MB): peak = 1015.926 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:10 ; elapsed = 00:00:10 . Memory (MB): peak = 1015.926 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:10 ; elapsed = 00:00:10 . Memory (MB): peak = 1015.926 ; gain = 0.000
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.003 . Memory (MB): peak = 1015.926 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [D:/_University_/__AN-2__/Semestrul_2/SCID/Proiect/Proiect_PingPong/Proiect_PingPong.srcs/constrs_1/new/basys3.xdc]
+WARNING: [Vivado 12-584] No ports matched 'clk'. [D:/_University_/__AN-2__/Semestrul_2/SCID/Proiect/Proiect_PingPong/Proiect_PingPong.srcs/constrs_1/new/basys3.xdc:7]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/_University_/__AN-2__/Semestrul_2/SCID/Proiect/Proiect_PingPong/Proiect_PingPong.srcs/constrs_1/new/basys3.xdc:7]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'clk'. [D:/_University_/__AN-2__/Semestrul_2/SCID/Proiect/Proiect_PingPong/Proiect_PingPong.srcs/constrs_1/new/basys3.xdc:8]
+CRITICAL WARNING: [Vivado 12-4739] create_clock:No valid object(s) found for '-objects [get_ports clk]'. [D:/_University_/__AN-2__/Semestrul_2/SCID/Proiect/Proiect_PingPong/Proiect_PingPong.srcs/constrs_1/new/basys3.xdc:8]
+Resolution: Check if the specified object(s) exists in the current design. If it does, ensure that the correct design hierarchy was specified for the object. If you are working with clocks, make sure create_clock was used to create the clock object before it is referenced.
+WARNING: [Vivado 12-584] No ports matched 'sw[0]'. [D:/_University_/__AN-2__/Semestrul_2/SCID/Proiect/Proiect_PingPong/Proiect_PingPong.srcs/constrs_1/new/basys3.xdc:12]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/_University_/__AN-2__/Semestrul_2/SCID/Proiect/Proiect_PingPong/Proiect_PingPong.srcs/constrs_1/new/basys3.xdc:12]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'sw[1]'. [D:/_University_/__AN-2__/Semestrul_2/SCID/Proiect/Proiect_PingPong/Proiect_PingPong.srcs/constrs_1/new/basys3.xdc:13]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/_University_/__AN-2__/Semestrul_2/SCID/Proiect/Proiect_PingPong/Proiect_PingPong.srcs/constrs_1/new/basys3.xdc:13]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'sw[2]'. [D:/_University_/__AN-2__/Semestrul_2/SCID/Proiect/Proiect_PingPong/Proiect_PingPong.srcs/constrs_1/new/basys3.xdc:14]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/_University_/__AN-2__/Semestrul_2/SCID/Proiect/Proiect_PingPong/Proiect_PingPong.srcs/constrs_1/new/basys3.xdc:14]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'sw[3]'. [D:/_University_/__AN-2__/Semestrul_2/SCID/Proiect/Proiect_PingPong/Proiect_PingPong.srcs/constrs_1/new/basys3.xdc:15]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/_University_/__AN-2__/Semestrul_2/SCID/Proiect/Proiect_PingPong/Proiect_PingPong.srcs/constrs_1/new/basys3.xdc:15]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'sw[4]'. [D:/_University_/__AN-2__/Semestrul_2/SCID/Proiect/Proiect_PingPong/Proiect_PingPong.srcs/constrs_1/new/basys3.xdc:16]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/_University_/__AN-2__/Semestrul_2/SCID/Proiect/Proiect_PingPong/Proiect_PingPong.srcs/constrs_1/new/basys3.xdc:16]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'sw[5]'. [D:/_University_/__AN-2__/Semestrul_2/SCID/Proiect/Proiect_PingPong/Proiect_PingPong.srcs/constrs_1/new/basys3.xdc:17]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/_University_/__AN-2__/Semestrul_2/SCID/Proiect/Proiect_PingPong/Proiect_PingPong.srcs/constrs_1/new/basys3.xdc:17]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'sw[6]'. [D:/_University_/__AN-2__/Semestrul_2/SCID/Proiect/Proiect_PingPong/Proiect_PingPong.srcs/constrs_1/new/basys3.xdc:18]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/_University_/__AN-2__/Semestrul_2/SCID/Proiect/Proiect_PingPong/Proiect_PingPong.srcs/constrs_1/new/basys3.xdc:18]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'sw[7]'. [D:/_University_/__AN-2__/Semestrul_2/SCID/Proiect/Proiect_PingPong/Proiect_PingPong.srcs/constrs_1/new/basys3.xdc:19]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/_University_/__AN-2__/Semestrul_2/SCID/Proiect/Proiect_PingPong/Proiect_PingPong.srcs/constrs_1/new/basys3.xdc:19]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'sw[8]'. [D:/_University_/__AN-2__/Semestrul_2/SCID/Proiect/Proiect_PingPong/Proiect_PingPong.srcs/constrs_1/new/basys3.xdc:20]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/_University_/__AN-2__/Semestrul_2/SCID/Proiect/Proiect_PingPong/Proiect_PingPong.srcs/constrs_1/new/basys3.xdc:20]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'sw[9]'. [D:/_University_/__AN-2__/Semestrul_2/SCID/Proiect/Proiect_PingPong/Proiect_PingPong.srcs/constrs_1/new/basys3.xdc:21]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/_University_/__AN-2__/Semestrul_2/SCID/Proiect/Proiect_PingPong/Proiect_PingPong.srcs/constrs_1/new/basys3.xdc:21]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'sw[10]'. [D:/_University_/__AN-2__/Semestrul_2/SCID/Proiect/Proiect_PingPong/Proiect_PingPong.srcs/constrs_1/new/basys3.xdc:22]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/_University_/__AN-2__/Semestrul_2/SCID/Proiect/Proiect_PingPong/Proiect_PingPong.srcs/constrs_1/new/basys3.xdc:22]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'sw[11]'. [D:/_University_/__AN-2__/Semestrul_2/SCID/Proiect/Proiect_PingPong/Proiect_PingPong.srcs/constrs_1/new/basys3.xdc:23]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/_University_/__AN-2__/Semestrul_2/SCID/Proiect/Proiect_PingPong/Proiect_PingPong.srcs/constrs_1/new/basys3.xdc:23]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'sw[12]'. [D:/_University_/__AN-2__/Semestrul_2/SCID/Proiect/Proiect_PingPong/Proiect_PingPong.srcs/constrs_1/new/basys3.xdc:24]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/_University_/__AN-2__/Semestrul_2/SCID/Proiect/Proiect_PingPong/Proiect_PingPong.srcs/constrs_1/new/basys3.xdc:24]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'sw[13]'. [D:/_University_/__AN-2__/Semestrul_2/SCID/Proiect/Proiect_PingPong/Proiect_PingPong.srcs/constrs_1/new/basys3.xdc:25]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/_University_/__AN-2__/Semestrul_2/SCID/Proiect/Proiect_PingPong/Proiect_PingPong.srcs/constrs_1/new/basys3.xdc:25]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'sw[14]'. [D:/_University_/__AN-2__/Semestrul_2/SCID/Proiect/Proiect_PingPong/Proiect_PingPong.srcs/constrs_1/new/basys3.xdc:26]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/_University_/__AN-2__/Semestrul_2/SCID/Proiect/Proiect_PingPong/Proiect_PingPong.srcs/constrs_1/new/basys3.xdc:26]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'sw[15]'. [D:/_University_/__AN-2__/Semestrul_2/SCID/Proiect/Proiect_PingPong/Proiect_PingPong.srcs/constrs_1/new/basys3.xdc:27]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/_University_/__AN-2__/Semestrul_2/SCID/Proiect/Proiect_PingPong/Proiect_PingPong.srcs/constrs_1/new/basys3.xdc:27]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'led[0]'. [D:/_University_/__AN-2__/Semestrul_2/SCID/Proiect/Proiect_PingPong/Proiect_PingPong.srcs/constrs_1/new/basys3.xdc:31]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/_University_/__AN-2__/Semestrul_2/SCID/Proiect/Proiect_PingPong/Proiect_PingPong.srcs/constrs_1/new/basys3.xdc:31]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'led[1]'. [D:/_University_/__AN-2__/Semestrul_2/SCID/Proiect/Proiect_PingPong/Proiect_PingPong.srcs/constrs_1/new/basys3.xdc:32]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/_University_/__AN-2__/Semestrul_2/SCID/Proiect/Proiect_PingPong/Proiect_PingPong.srcs/constrs_1/new/basys3.xdc:32]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'led[2]'. [D:/_University_/__AN-2__/Semestrul_2/SCID/Proiect/Proiect_PingPong/Proiect_PingPong.srcs/constrs_1/new/basys3.xdc:33]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/_University_/__AN-2__/Semestrul_2/SCID/Proiect/Proiect_PingPong/Proiect_PingPong.srcs/constrs_1/new/basys3.xdc:33]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'led[3]'. [D:/_University_/__AN-2__/Semestrul_2/SCID/Proiect/Proiect_PingPong/Proiect_PingPong.srcs/constrs_1/new/basys3.xdc:34]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/_University_/__AN-2__/Semestrul_2/SCID/Proiect/Proiect_PingPong/Proiect_PingPong.srcs/constrs_1/new/basys3.xdc:34]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'led[4]'. [D:/_University_/__AN-2__/Semestrul_2/SCID/Proiect/Proiect_PingPong/Proiect_PingPong.srcs/constrs_1/new/basys3.xdc:35]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/_University_/__AN-2__/Semestrul_2/SCID/Proiect/Proiect_PingPong/Proiect_PingPong.srcs/constrs_1/new/basys3.xdc:35]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'led[5]'. [D:/_University_/__AN-2__/Semestrul_2/SCID/Proiect/Proiect_PingPong/Proiect_PingPong.srcs/constrs_1/new/basys3.xdc:36]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/_University_/__AN-2__/Semestrul_2/SCID/Proiect/Proiect_PingPong/Proiect_PingPong.srcs/constrs_1/new/basys3.xdc:36]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'led[6]'. [D:/_University_/__AN-2__/Semestrul_2/SCID/Proiect/Proiect_PingPong/Proiect_PingPong.srcs/constrs_1/new/basys3.xdc:37]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/_University_/__AN-2__/Semestrul_2/SCID/Proiect/Proiect_PingPong/Proiect_PingPong.srcs/constrs_1/new/basys3.xdc:37]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'led[7]'. [D:/_University_/__AN-2__/Semestrul_2/SCID/Proiect/Proiect_PingPong/Proiect_PingPong.srcs/constrs_1/new/basys3.xdc:38]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/_University_/__AN-2__/Semestrul_2/SCID/Proiect/Proiect_PingPong/Proiect_PingPong.srcs/constrs_1/new/basys3.xdc:38]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'led[8]'. [D:/_University_/__AN-2__/Semestrul_2/SCID/Proiect/Proiect_PingPong/Proiect_PingPong.srcs/constrs_1/new/basys3.xdc:39]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/_University_/__AN-2__/Semestrul_2/SCID/Proiect/Proiect_PingPong/Proiect_PingPong.srcs/constrs_1/new/basys3.xdc:39]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'led[9]'. [D:/_University_/__AN-2__/Semestrul_2/SCID/Proiect/Proiect_PingPong/Proiect_PingPong.srcs/constrs_1/new/basys3.xdc:40]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/_University_/__AN-2__/Semestrul_2/SCID/Proiect/Proiect_PingPong/Proiect_PingPong.srcs/constrs_1/new/basys3.xdc:40]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'led[10]'. [D:/_University_/__AN-2__/Semestrul_2/SCID/Proiect/Proiect_PingPong/Proiect_PingPong.srcs/constrs_1/new/basys3.xdc:41]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/_University_/__AN-2__/Semestrul_2/SCID/Proiect/Proiect_PingPong/Proiect_PingPong.srcs/constrs_1/new/basys3.xdc:41]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'led[11]'. [D:/_University_/__AN-2__/Semestrul_2/SCID/Proiect/Proiect_PingPong/Proiect_PingPong.srcs/constrs_1/new/basys3.xdc:42]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/_University_/__AN-2__/Semestrul_2/SCID/Proiect/Proiect_PingPong/Proiect_PingPong.srcs/constrs_1/new/basys3.xdc:42]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'led[12]'. [D:/_University_/__AN-2__/Semestrul_2/SCID/Proiect/Proiect_PingPong/Proiect_PingPong.srcs/constrs_1/new/basys3.xdc:43]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/_University_/__AN-2__/Semestrul_2/SCID/Proiect/Proiect_PingPong/Proiect_PingPong.srcs/constrs_1/new/basys3.xdc:43]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'led[13]'. [D:/_University_/__AN-2__/Semestrul_2/SCID/Proiect/Proiect_PingPong/Proiect_PingPong.srcs/constrs_1/new/basys3.xdc:44]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/_University_/__AN-2__/Semestrul_2/SCID/Proiect/Proiect_PingPong/Proiect_PingPong.srcs/constrs_1/new/basys3.xdc:44]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'led[14]'. [D:/_University_/__AN-2__/Semestrul_2/SCID/Proiect/Proiect_PingPong/Proiect_PingPong.srcs/constrs_1/new/basys3.xdc:45]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/_University_/__AN-2__/Semestrul_2/SCID/Proiect/Proiect_PingPong/Proiect_PingPong.srcs/constrs_1/new/basys3.xdc:45]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'led[15]'. [D:/_University_/__AN-2__/Semestrul_2/SCID/Proiect/Proiect_PingPong/Proiect_PingPong.srcs/constrs_1/new/basys3.xdc:46]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/_University_/__AN-2__/Semestrul_2/SCID/Proiect/Proiect_PingPong/Proiect_PingPong.srcs/constrs_1/new/basys3.xdc:46]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+Finished Parsing XDC File [D:/_University_/__AN-2__/Semestrul_2/SCID/Proiect/Proiect_PingPong/Proiect_PingPong.srcs/constrs_1/new/basys3.xdc]
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1015.926 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.003 . Memory (MB): peak = 1015.926 ; gain = 0.000
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:19 ; elapsed = 00:00:19 . Memory (MB): peak = 1015.926 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xa7a35tcpg236-1I
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:19 ; elapsed = 00:00:19 . Memory (MB): peak = 1015.926 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:19 ; elapsed = 00:00:19 . Memory (MB): peak = 1015.926 ; gain = 0.000
+---------------------------------------------------------------------------------
+INFO: [Synth 8-802] inferred FSM for state register 'currentState_reg' in module 'PingPong'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                  hold_r |               000000000000000001 |                            00000
+                  led_l1 |               000000000000000010 |                            00010
+                  led_l2 |               000000000000000100 |                            00011
+                  led_l3 |               000000000000001000 |                            00100
+                  led_l4 |               000000000000010000 |                            00101
+                  led_l5 |               000000000000100000 |                            00110
+                  led_l6 |               000000000001000000 |                            00111
+                  led_l7 |               000000000010000000 |                            01000
+                  hold_l |               000000000100000000 |                            00001
+                  led_r1 |               000000001000000000 |                            01001
+                  led_r2 |               000000010000000000 |                            01010
+                  led_r3 |               000000100000000000 |                            01011
+                  led_r4 |               000001000000000000 |                            01100
+                  led_r5 |               000010000000000000 |                            01101
+                  led_r6 |               000100000000000000 |                            01110
+                  led_r7 |               001000000000000000 |                            01111
+                    winl |               010000000000000000 |                            10000
+                    winr |               100000000000000000 |                            10001
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'currentState_reg' using encoding 'one-hot' in module 'PingPong'
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:19 ; elapsed = 00:00:19 . Memory (MB): peak = 1015.926 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input   31 Bit       Adders := 1     
++---Registers : 
+	                1 Bit    Registers := 1     
++---Muxes : 
+	  18 Input   18 Bit        Muxes := 1     
+	   2 Input   18 Bit        Muxes := 4     
+	  18 Input   10 Bit        Muxes := 1     
+	  18 Input    8 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 90 (col length:60)
+BRAMs: 100 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:21 ; elapsed = 00:00:22 . Memory (MB): peak = 1015.926 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:30 ; elapsed = 00:00:31 . Memory (MB): peak = 1015.926 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:30 ; elapsed = 00:00:31 . Memory (MB): peak = 1015.926 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:30 ; elapsed = 00:00:31 . Memory (MB): peak = 1015.926 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:35 ; elapsed = 00:00:36 . Memory (MB): peak = 1015.926 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:35 ; elapsed = 00:00:36 . Memory (MB): peak = 1015.926 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:35 ; elapsed = 00:00:36 . Memory (MB): peak = 1015.926 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:35 ; elapsed = 00:00:36 . Memory (MB): peak = 1015.926 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:35 ; elapsed = 00:00:36 . Memory (MB): peak = 1015.926 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:35 ; elapsed = 00:00:36 . Memory (MB): peak = 1015.926 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-------+------+
+|      |Cell   |Count |
++------+-------+------+
+|1     |BUFG   |     1|
+|2     |CARRY4 |    16|
+|3     |LUT1   |     2|
+|4     |LUT2   |     5|
+|5     |LUT3   |     1|
+|6     |LUT4   |     8|
+|7     |LUT5   |     1|
+|8     |LUT6   |     6|
+|9     |FDCE   |    17|
+|10    |FDPE   |     1|
+|11    |FDRE   |    32|
+|12    |IBUF   |     4|
+|13    |OBUF   |    18|
++------+-------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:35 ; elapsed = 00:00:36 . Memory (MB): peak = 1015.926 ; gain = 0.000
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 0 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:23 ; elapsed = 00:00:33 . Memory (MB): peak = 1015.926 ; gain = 0.000
+Synthesis Optimization Complete : Time (s): cpu = 00:00:36 ; elapsed = 00:00:36 . Memory (MB): peak = 1015.926 ; gain = 0.000
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.004 . Memory (MB): peak = 1022.480 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 16 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1022.480 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+INFO: [Common 17-83] Releasing license: Synthesis
+18 Infos, 38 Warnings, 34 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:44 ; elapsed = 00:00:46 . Memory (MB): peak = 1022.480 ; gain = 6.555
+INFO: [runtcl-6] Synthesis results are not added to the cache due to CRITICAL_WARNING
+INFO: [Common 17-1381] The checkpoint 'D:/_University_/__AN-2__/Semestrul_2/SCID/Proiect/Proiect_PingPong/Proiect_PingPong.runs/synth_1/PingPong.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file PingPong_utilization_synth.rpt -pb PingPong_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Thu May 19 14:33:50 2022...
